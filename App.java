@@ -3,7 +3,11 @@ import java.lang.Math;
 
 public class App {
     public static void main(String[] args) {
-        //Create a Scanner object to take in input such as your name and the math operation you want to do
+        /**
+        Create a Scanner object to take in input such as your name and the math operation you want to do
+        * @param args Command-line arguments
+        */
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = sc.nextLine();
@@ -97,32 +101,55 @@ public class App {
             sc.close();
     }
 
-    //Create an addition method 
+    /**
+    *Create an addition method 
+    *@param a The first integer.
+    *@param b The second integer.
+    *@return The sum of a and b.
+    */
     public static int add(int a, int b){
         return a + b;
     }
 
-    //Create an subtraction method
+    /*
+    Create an subtraction method 
+    *@param a The first integer.
+    @param b The second integer.
+    @return The result of a - b.
+    */
     public static int sub(int a, int b){
         return a - b;
     }
 
-    //Create an multlplication method
+    /**Create an multlplication method
+    * @param a The first integer.
+    * @param b The second integer.
+    * @return The prodyct of a and b.
+    */
     public static int mult(int a, int b){
         return a * b;
     }
 
-    //Create an division method
+    /**Create an division method
+    * @param a The first integer
+    * @param b The second integer
+    * @return The quotient of a dividiend by b
+    */
     public static int div(int a, int b){
         return a / b;
     }
 
-    //Create a square root method
+    /**Create a square root method
+    * @param a The number where we are finding the 
+    * @return The square root of a.
+    */
     public static int sqrt(int a){
         return Math.sqrt(a);
     }
 
-    //Create a prime number checker method
+    /**Create a prime number checker method
+    * @param c The number to check
+    */
     public static void isPrime(int c){
         for(int i = 2; i < Math.sqrt(c); i++){
             if(c % i == 0){
@@ -134,7 +161,10 @@ public class App {
         }
     }
 
-    //Create a factorial method
+    /**Create a factorial method
+    * @param a is the number which we are finding the factorial
+    * @return The factorial of a.
+    */
     public static int factorial(int a){
         int fact = 1;
         for(int i = 1; i <= a; i++){
@@ -143,7 +173,9 @@ public class App {
         return fact;
     }
 
-    //Create an even/odd checker method
+    /**Create an even/odd checker method
+    * @param a which is the number to check
+    */
     public static void evenOrOdd(int a){
         if(a % 2 == 0){
             System.out.println(a + " is an even number.");
@@ -153,7 +185,9 @@ public class App {
         }
     }
 
-    //Create a sine/cosine/tangent method
+    /**Create a sine/cosine/tangent method
+    * @param a which is the number for which we are finding the sine/cosine/tangent of
+    */
     public static void trig(double a){
         System.out.println("Please select an option:");
         boolean trig = true;
