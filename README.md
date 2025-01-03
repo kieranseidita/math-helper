@@ -15,7 +15,7 @@ Math Helper is a simple, command-line Java application that provides a variety o
    ```bash
    git clone https://github.com/username/math-helper.git
 2. Navigate to the project directory
-   
+    ```bash
    cd math-helper
 4. Compile the program:
    ```bash
